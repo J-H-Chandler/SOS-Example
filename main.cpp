@@ -36,19 +36,19 @@ int main(){
 
 
 void init_leds(){
-    RGB_LED.write(7);
+    RGB_LED.write(0);
 }
  
 void dot(){
-    RGB_LED.write(6);               // turn red LED on
+    RGB_LED.write(1);               // turn red LED on
     ThisThread::sleep_for(150ms);
-    RGB_LED.write(7);               // turn red LED off
+    RGB_LED.write(0);               // turn red LED off
 }
  
 void dash() {
-    RGB_LED.write(6);               // turn red LED on
+    RGB_LED.write(1);               // turn red LED on
     ThisThread::sleep_for(450ms);
-    RGB_LED.write(7);               // turn red LED off
+    RGB_LED.write(0);               // turn red LED off
 }
 
 // the morse equivalent of the letter 'S' is three quick flashes or dots ...
